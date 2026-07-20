@@ -1,0 +1,62 @@
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  color: #64748B;
+  font-weight: 600;
+}
+
+
+.clouds {
+  position: relative;
+  width: 250px;
+  height: 100px;
+}
+
+
+.cloud {
+  position: absolute;
+  animation: floatCloud 5s ease-in-out infinite;
+  opacity: 0.85;
+}
+
+
+.cloud-one {
+  left: 0;
+  top: 25px;
+  font-size: 3.5rem;
+  animation-duration: 5s;
+}
+
+.cloud-two {
+  left: 80px;
+  top: 0;
+  font-size: 5rem;
+  animation-duration: 7s;
+}
+
+.cloud-three {
+  right: 0;
+  top: 30px;
+  font-size: 3.8rem;
+  animation-duration: 6s;
+}
+
+
+@keyframes floatCloud {
+
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, -20px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+
+}
